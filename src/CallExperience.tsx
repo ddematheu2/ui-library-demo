@@ -9,17 +9,13 @@ import React, { useEffect, useState } from 'react';
 import { CallComponents } from './callComponents';
 
 export interface MeetingProps {
-    chatOpen: boolean;
-    setChatOpen: (chatOpen:boolean) => void;
     groupId: string;
     tokenCredential: AzureCommunicationTokenCredential;
-    endpoint: string;
-    threadId: string;
     userId: string;
     displayName: string;
   }
 
-export const MeetingExperience = (props:MeetingProps):JSX.Element => {
+export const CallExperience = (props:MeetingProps):JSX.Element => {
 
     const {groupId, tokenCredential, userId} = props;
 
